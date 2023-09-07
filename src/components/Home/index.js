@@ -12,9 +12,20 @@ const Home = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      return setLetterClass('text-animate-hover')
+      setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
+
+  // useEffect(() => {
+
+  //   let timeoutId = setTimeout(() => {
+  //     setLetterClass('text-animate-hover')
+  //   }, 4000)
+
+  //   return () => {
+  //     clearTimeout(timeoutId)
+  //   }
+  // }, [])
 
   return (
     <div className="container home-page">
