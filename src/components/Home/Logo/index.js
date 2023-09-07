@@ -11,7 +11,7 @@ const Logo = () => {
 
   useEffect(() => {
     gsap.registerPlugin(DrawSVGPlugin)
-
+// If comment out below half then comment in and save it works
     gsap
       .timeline()
       .to(bgRef.current, {
